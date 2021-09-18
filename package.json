@@ -1,0 +1,24 @@
+{
+  "name": "typescript-hello",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "transpile": "tsc",
+    "dev": "tsnd --respawn --log-error -r tsconfig-paths/register ./src/server.ts",
+    "tscalias": "tsc; tsc-alias; node ./dist/server.js",
+    "tsconfigpath": "tsc; node -r tsconfig-paths/register ./dist/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^1.1.8",
+    "tsc-alias": "^1.3.9",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "tsconfig-paths": "^3.11.0"
+  }
+}

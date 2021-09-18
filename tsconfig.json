@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ESNext",
+	"module": "CommonJS",
+	"moduleResolution": "node",
+	"resolveJsonModule": true,
+    "outDir": "./dist",
+    "baseUrl": "./src/",
+	"rootDir": "./src",
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [ "node_modules", "dist" ],
+}
